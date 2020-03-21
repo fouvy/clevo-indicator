@@ -468,21 +468,21 @@ static int ec_auto_duty_adjust(void) {
     if (temp >= 30 && duty < 20)
         return 20;
     //
-    if (temp <= 30 && duty > 20)
+    if (temp <= 35 && duty > 20)
         return 20;
-    if (temp <= 40 && duty > 30)
+    if (temp <= 45 && duty > 30)
         return 30;
-    if (temp <= 50 && duty > 40)
+    if (temp <= 55 && duty > 40)
         return 40;
-    if (temp <= 60 && duty > 50)
+    if (temp <= 65 && duty > 50)
         return 50;
-    if (temp <= 70 && duty > 60)
+    if (temp <= 75 && duty > 60)
         return 60;
-    if (temp <= 80 && duty > 70)
+    if (temp <= 85 && duty > 70)
         return 70;
-    if (temp <= 85 && duty > 80)
+    if (temp <= 88 && duty > 80)
         return 80;
-    if (temp <= 90 && duty > 90)
+    if (temp <= 92 && duty > 90)
         return 90;
     //
     return 0;
